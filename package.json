@@ -1,0 +1,14 @@
+{
+  "name": "service-worker-auth",
+  "version": "1.0.0",
+  "description": "an example demonstrating usage of service workers for authentication",
+  "main": "src/index.js",
+  "author": "Li Kai <hello+github@lik.ai>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

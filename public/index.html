@@ -3,11 +3,26 @@
   <head>
     <title>Service Worker Authentication Example</title>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css"
+    />
   </head>
 
   <body>
-    <div id="app"></div>
-
+    <h1>Service Worker Authentication Example</h1>
+    <p>
+      If service worker is disabled, you will not be authenticated.
+    </p>
+    <form id="form" action="/login" method="post">
+      <label for="username">Usermame</label>
+      <input type="text" id="username" name="username" value="admin" />
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" value="password" />
+      <button type="submit">Log In</button>
+    </form>
+    <button id="fetch-button" type="button">Fetch</button>
+    <p id="app"></p>
     <script src="main.js"></script>
   </body>
 </html>

@@ -15,6 +15,7 @@ const publicFolder = path.resolve(__dirname, '../public');
 app.use(express.static(publicFolder));
 // Parse json in body
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.post('/login', (req, res) => {
   const username = req.body.username;
